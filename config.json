@@ -1,0 +1,14 @@
+{
+    "mqttBroker": {
+        "host": "test.mosquitto.org",
+        "port": 8080,
+        "retryDelay": 0.1
+    },
+    "redis": {
+        "prefix": "pyiot",
+        "host": "localhost",
+        "port": 6379,
+        "db": 0,
+        "threshold": 2
+    }
+}
