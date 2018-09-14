@@ -2,6 +2,7 @@
     "topic": "sensor_data",
     "simulation_fn": "randomInRange",
     "simulation_args": [22, 28],
+    "threshold": 27,
     "flow_fn": "setInterval",
     "flow_args": [1]
 }

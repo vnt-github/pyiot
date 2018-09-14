@@ -10,5 +10,10 @@
         "port": 6379,
         "db": 0,
         "threshold": 2
+    },
+    "monitoring": {
+        "rangeInSeconds": "300",
+        "checkIntervalInSeconds": 5,
+        "emailAddresses": ["vnttest1@mailinator.com", "vnttest2@mailinator.com"]
     }
 }

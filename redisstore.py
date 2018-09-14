@@ -176,6 +176,12 @@ class _Redis(object):
 		values = self.__redis__.zrange(key, start, stop, withscores)
 		return values
 
+	def zrangebyscore(self, key, start, stop, withscore=True):
+		print('zrangebyscore', key, start, stop)
+		key = self.getKey(key)
+		value = self.__redis__.zrangebyscore(key, min=start, max=stop, withscores=withscore)
+		return value
+
 	def getKey(self, key):
 		# print "Redis.getKey():",key
 		return self.prefix + str(key)
